@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@MyStaticSessionWrapper.Counter
+<div class="text-center">
+    <a class="btn btn-primary" href="@this.Url.Action("IncrementWithStaticSession")">Increment using static session</a>
+    <br />
+    <a class="btn btn-primary" href="@this.Url.Action("IncrementWithStaticSessionAsync")">Increment using static session async</a>
+    <br />
+    <br />
+    <a class="btn btn-primary" href="@this.Url.Action("Increment")">Increment using session</a>
+    <br />
+    <a class="btn btn-primary" href="@this.Url.Action("IncrementAsync")">Increment using session async</a>
+    <br />
+    <br />
+    <a class="btn btn-primary" href="@this.Url.Action("IncrementWithExtensionMethods")">Increment using session with extension methods</a>
+    <br />
+    <a class="btn btn-primary" href="@this.Url.Action("IncrementWithExtensionMethodsAsync")">Increment using session with extension methods async</a>
+</div>
